@@ -6,7 +6,7 @@ Book Information: Browse comprehensive details about the beloved novel "Jane Eyr
 Feedback Submission: Share your impressions of the book through the user-friendly feedback form, including your name, email address, phone number, and a detailed message.
 
 Website :
-Here, used html,css,javascript and php to create this website.
+Here, used html,css,javascript and php to create this website.So, I had to update my html and js files to connect my php file.
 
 Database Tables :
 There is a database name jane_eyre. The website employs a MySQL database to effectively manage various aspects of user interactions. The following tables are pivotal components of the database:
