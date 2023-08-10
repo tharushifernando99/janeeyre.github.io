@@ -25,11 +25,11 @@ function showSlides() {
 function validateForm(event) {
   event.preventDefault();
 
-  var name = document.getElementById('name').value;
+  var name = document.getElementById('fullname').value;
   var email = document.getElementById('email').value;
-  var phone = document.getElementById('phone').value;
+  var phone = document.getElementById('number').value;
 
-  if (name.trim() === '') {
+  if (fullname.trim() === '') {
     alert('Please enter your name.');
     return;
   }
@@ -39,7 +39,7 @@ function validateForm(event) {
     return;
   }
 
-  if (!isValidPhone(phone)) {
+  if (!isValidPhone(number)) {
     alert('Please enter a valid phone number.');
     return;
   }
@@ -54,7 +54,7 @@ function isValidEmail(email) {
   return pattern.test(email);
 }
 
-function isValidPhone(phone) {
+function isValidPhone(number) {
   var pattern = /^\d{10}$/;
   return pattern.test(phone);
 }
