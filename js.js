@@ -18,16 +18,14 @@ function showSlides() {
   setTimeout(showSlides, 4000); 
 }
 
-
-
 //form validation
 
 function validateForm(event) {
   event.preventDefault();
 
-  var name = document.getElementById('fullname').value;
+  var fullname = document.getElementById('fullname').value;
   var email = document.getElementById('email').value;
-  var phone = document.getElementById('number').value;
+  var number = document.getElementById('number').value;
 
   if (fullname.trim() === '') {
     alert('Please enter your name.');
@@ -56,7 +54,7 @@ function isValidEmail(email) {
 
 function isValidPhone(number) {
   var pattern = /^\d{10}$/;
-  return pattern.test(phone);
+  return pattern.test(number);
 }
 
 
